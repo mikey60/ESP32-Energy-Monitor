@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name TEMP-HUM-PRES-BME280)(type Legacy)(uri ${KIPRJMOD}/TEMP-HUM-PRES-BME280.mod)(options "")(descr ""))
+  (lib (name MountingHole)(type KiCad)(uri ${KIPRJMOD}/MountingHole.pretty)(options "")(descr ""))
+)
