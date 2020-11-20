@@ -38,13 +38,13 @@ WiFiClient  telnetClient;
 #endif
 #define portTICK_PERIOD_MS 1
 
-#define OTA_password "ExtraProt66"
-const char* ssid = "mgshome";
-const char* password = "mikeysblackcorvette";
+#define OTA_password "your_OTA_password"
+const char* ssid = "your_SSID";
+const char* password = "your_SSID_password";
 const char* hostname = "Energy Monitor";
-const char* mqttServer = "192.168.1.13";
+const char* mqttServer = "xxx.xxx.xxx.xxx"; //your IP address
 const int mqttPort = 1883;
-//const char* mqttUser = "yourMQTTuser";
+//const char* mqttUser = "yourMQTTuser";   //Use if desired
 //const char* mqttPassword = "yourMQTTpassword";
 
 WiFiClient espClient;
