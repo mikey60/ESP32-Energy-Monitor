@@ -200,6 +200,9 @@ void Send_power(void *pvParameters)  // This is a task.
             delay(1000);
             mqtt_cnt ++;  // only allow 6 trys for connection to MQTT server
           }
+          if(mqtt_cnt >= 6) esp_restart(); // restart the device at this point
+          // Todo: Save line 1, line 2 and total energy other wise they are reset to 0
+          // Possibly could just call WiFi.mode(WIFI_OFF) and WiFi.begin(...) 
   
          }
       client.disconnect();

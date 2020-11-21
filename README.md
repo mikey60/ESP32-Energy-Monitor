@@ -16,6 +16,7 @@ Hardware and code are designed to use the Aeon labs Home Energy Meter, model DSB
 * The power supply is old school with a 60Hz transformer with a diode bridge and 1000uF capacitor to provide the DC power and the 60 Hz AC signal to the energy meter.  I picked up the 6 volt DC, 800mA class 2 power supply at the local surplus store.  I opened the power supply to add the two wires for the sine wave input to the energy monitor.  I also added two 1 amp rectifier diodes in series with the filtered DC output to the reduce the power of the AMS1117-3.3 LDO regulator on the energy monitor board.
 * There is some distortion of the sine wave voltage due to the load on the power supply.
 * The output of the current clamps is also distorted especially at low currents. The linearity of the output versus power is not too bad even with the distortion.
+* The WiFi activity adds some noise to  the A/D coversions.
 * The energy totals get reset if there is a wifi problem. Additonal code could be written to keep a running sum in Flash every so often.
 
 
@@ -32,3 +33,4 @@ Modifications
 
 * Pictures of the finished device can be found in the images folder.
 * A plot of the current consumption of the device can be found in the data folder.
+* I attached a logic analyzer  to pin IO4 and let it run for an hour and did not see any missed 1 KHz samples
