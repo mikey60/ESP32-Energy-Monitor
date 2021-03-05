@@ -17,7 +17,7 @@ Hardware and code are designed to use the Aeon labs Home Energy Meter, model DSB
 * There is some distortion of the sine wave voltage due to the load on the power supply.
 * The output of the current clamps is also distorted especially at low currents. The linearity of the output versus power is not too bad even with the distortion.
 * The WiFi activity adds some noise to  the A/D coversions.
-* The energy totals get reset if there is a wifi problem. Additonal code could be written to keep a running sum in Flash every so often.
+* The energy totals get reset if there is a wifi problem or power interruption. Additonal code could be written to keep a running sum in Flash every so often.
 
 
 **PCB**
